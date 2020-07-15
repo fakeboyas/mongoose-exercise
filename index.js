@@ -10,7 +10,7 @@ app.use(express.urlencoded(({extended:false})))
 app.use('/api/movies', require('./routes/movies'));
 
 app.get('/', (req,res)=>{
-    res.render('index.ejs')
+    res.render('pages/index.ejs')
 })
 
 if(db){
